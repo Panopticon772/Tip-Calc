@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tip Calculator!</title>
+        <link rel="stylesheet" type="text/css" href="tip.css">
+    </head>
+
+    <body>
+        <h1>Tip Calculator</h1>
+        <div>
+            <label>Service Amount:
+            <input type="number" step=0.01 id="amount" name="amount" placeholder="Enter service amount">
+            </label>
+            <label>Tip Percentage:
+            <input type="number" id="tip-percent" name="tip-percent" placeholder="Enter tip percentage">
+            </label>
+            <label>
+            <input type="button" class="btn" id="calculate" value="Calculate!">
+            </label>
+            <label>
+            <p id="tip-amount"></p>
+            <p id="total"></p>
+            </label> 
+        </div>
+        <script src="tips.js"></script>
+    </body>
+</html>
