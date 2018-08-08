@@ -1,39 +1,47 @@
 body {
-    font-family: "Oswald", sans-serif;
-    background-image: url('../assets/images/analytics-blur-business-590045.jpg');
+    font-family: "Montserrat", sans-serif;
+    background-image: url('../assets/images/architecture-blue-building-411595.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 4.0rem;
 }
 
 h1 {
     text-align: center;
-    font-size: 4.0rem;
-    color: rgb(35, 12, 240);
+    font-size: 4.2rem;
     padding-bottom: -5px;
+    color: rgb(224, 221, 18);
+    text-shadow: 5px 5px rgb(1, 111, 198); 
 }
 
 h2 {
     text-align: center;
-    color: rgb(35, 12, 240);
+    color: rgb(224, 221, 18);
+    text-shadow: 2px 2px rgb(0, 129, 210); 
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 h3 {
     text-align: center;
-    color: rgb(35, 12, 240);
+    color: rgb(224, 221, 18);
+    text-shadow: 2px 2px rgb(0, 56, 106); 
     font-weight: 400;
 }
 
 h4 {
     text-align: center;
-    color: rgb(35, 12, 240);
+    color: rgb(224, 221, 18);
+    text-shadow: 2px 2px rgb(0, 56, 106);  
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 form {
     margin: 20px auto;
     width: 20rem;
-    color: rgb(35, 12, 240);
 }
 
 input {
@@ -45,23 +53,31 @@ input[type="number"] {
     display: block;
     margin-bottom: 25px;
     width: 100%;
-    border: 2px solid rgb(35, 12, 240);
-    background: rgb(217, 241, 255);
+    border: 2px solid rgb(224, 221, 18);
+    /* input background color */
+    background: rgb(1, 146, 225);
 }
 
 input:focus {
     background: #FFF;
-    border: 2px solid rgb(35, 12, 240);
+    border: 2px solid rgb(224, 221, 18);
+}
+
+::placeholder {
+    color: rgb(224, 221, 18);
 }
 
 .btn {
     display: block;
     margin-bottom: 25px;
     margin: 20px auto;
-    color: rgb(35, 12, 240);
-    background-color: rgb(234, 238, 240);
-    font-size: 17px;
-    padding: 12px;
+    color: rgb(224, 221, 18);
+    /* btn bg */
+    background-color: rgb(1, 146, 225);
+    border-color: rgb(224, 221, 18);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
     text-decoration: none;
     border-radius: 28px;
     text-transform: uppercase;
@@ -84,16 +100,16 @@ input:focus {
 
 /* modal content box */
 .modal-content {
-    background-color: #FEFEFE;
+    background-color: #558ABB;;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #FFF;
     width: 80%;
 }
 
 /* the close button */
 .close-modal {
-    color: #AAA;
+    color: #FFF;
     float: right;
     font-size: 28px;
     font-weight: bold;
