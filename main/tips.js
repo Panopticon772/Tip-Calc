@@ -27,3 +27,7 @@ window.onclick = (e) => {
         getModal.style.display = "none";
     }
 }
+
+// to-do
+// add enter btn functionality when submitting
+// esc key functionality for modal
