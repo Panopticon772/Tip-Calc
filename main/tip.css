@@ -54,14 +54,15 @@ input[type="number"] {
     display: block;
     margin-bottom: 25px;
     width: 100%;
+    color: rgb(1, 49, 91);
     border: 2px solid rgb(224, 221, 18);
     /* input background color */
-    background: rgb(6, 159, 235);
+    background: rgb(1, 146, 225);
     
 }
 
 input:focus {
-    background: #FFF;
+    background: rgb(116, 195, 252);
     border: 2px solid rgb(224, 221, 18);
 }
 
