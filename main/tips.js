@@ -8,7 +8,6 @@ const getSpan = document.getElementsByClassName("close-modal")[0];
 // math + open modal
 calcButton.addEventListener("click", () => {
     let amount = selectAmount.value;
-    console.log(amount);
     let tip = selectTip.value / 100;
     let totalTip = Math.round(amount * tip);
     let total = Math.round((+amount +totalTip) * 100) / 100;
@@ -35,6 +34,3 @@ window.onclick = (e) => {
         getModal.style.display = "none";
     }
 }
-
-// to-do
-// commas when entering numbers
