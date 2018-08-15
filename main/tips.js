@@ -1,16 +1,26 @@
 // selectors/target buttons
-const calcButton = document.querySelector("#calculate");
+
+//amount input selector
 const selectAmount = document.querySelector("#amount");
+//tip % input selector
 const selectTip = document.querySelector("#tip-percent");
+// select all number inputs
+const numberText = document.querySelectorAll("input[type=number]");
+const calcButton = document.querySelector("#calculate");
 const getModal = document.getElementById("my-modal");
 const getSpan = document.getElementsByClassName("close-modal")[0];
 
 // math + open modal
 calcButton.addEventListener("click", () => {
-    let amount = selectAmount.value;
-    let tip = selectTip.value / 100;
+    let amount = selectAmount.value.match(/^\d+$/);
+    let tip = selectTip.value.match(/^\d+$/) / 100;
     let totalTip = Math.round(amount * tip);
     let total = Math.round((+amount +totalTip) * 100) / 100;
+    if (amount === null) {
+        this.value = "";
+    } else if (tip === null) {
+        this.value = "";
+    }
     getModal.style.display = "block";
     document.querySelector("#tip-amount").innerHTML = `Tip: $${totalTip.toLocaleString("en")}`;
     document.querySelector("#total").innerHTML = `Total: $${total.toLocaleString("en")}`;
