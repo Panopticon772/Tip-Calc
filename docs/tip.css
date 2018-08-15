@@ -1,0 +1,139 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: url('../assets/images/architecture-blue-building-411595.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 4.5rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.2rem;
+    padding-bottom: -5px;
+    color: rgb(224, 221, 18);
+    text-shadow: 5px 5px rgb(1, 111, 198); 
+}
+
+h2 {
+    text-align: center;
+    color: rgb(224, 221, 18);
+    text-shadow: 2px 2px rgb(1, 111, 198);; 
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(224, 221, 18);
+    text-shadow: 2px 2px rgb(0, 56, 106); 
+    font-weight: 400;
+    font-size: 2.0rem;
+}
+
+h4 {
+    text-align: center;
+    color: rgb(224, 221, 18);
+    text-shadow: 2px 2px rgb(0, 56, 106);  
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+form {
+    margin: 20px auto;
+    width: 20rem;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+input[type="number"] {
+    display: block;
+    margin-bottom: 25px;
+    width: 19.0rem;
+    color: rgb(1, 49, 91);
+    border: 2px solid rgb(224, 221, 18);
+    /* input background color */
+    background: rgb(1, 146, 225);
+    
+}
+
+input:focus {
+    background: rgb(116, 195, 252);
+    border: 2px solid rgb(224, 221, 18);
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    /* color: rgb(1, 146, 225); */
+}
+
+.btn {
+    display: block;
+    margin-bottom: 25px;
+    margin: 20px auto;
+    color: rgb(224, 221, 18);
+    text-shadow: 2px 2px rgb(0, 56, 106);
+    /* btn bg */
+    background-color: rgb(1, 146, 225);
+    border-color: rgb(224, 221, 18);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 28px;
+    text-transform: uppercase;
+}
+
+/* modal */
+.modal {
+    /* hidden by default */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* modal content box */
+.modal-content {
+    background-color: rgb(6, 159, 235);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #FFF;
+    width: 80%;
+}
+
+/* the close button */
+.close-modal {
+    color: #FFF;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer-icons {
+    color: rgb(224, 221, 18);
+    margin: 2px;
+    text-shadow: 5px 5px rgb(0, 56, 106);
+}

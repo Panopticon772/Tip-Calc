@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tipper</title>
+        <link rel="stylesheet" type="text/css" href="tip.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Tipper</h1>
+            <h2>The Tipping Calculator</h2>
+        </div>
+        <form>
+            <div class="amount">
+                <input id="amount" type="number" name="amount" step=0.01 min="0" oninput="validity.valid||(value='');" placeholder="Bill">
+            </div>
+            <div class="tip">
+                <input id="tip-percent" type="number" name="tip-percent" min="0" oninput="validity.valid||(value='');" placeholder="Tip %">
+            </div>
+        </form>
+        <button id="calculate" class="btn">Calculate!</button>
+        <div id="my-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="calculations-tip">
+                    <h3 id="tip-amount"></h3>
+                </div>
+                <div class="calculations-total">
+                    <h3 id="total"></h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer"><h4>Coded by Chris Stepowski</h4>
+            <a href="https://www.linkedin.com/in/christopher-stepowski-a3a87911b/" target="_blank"><i class="fab fa-linkedin fa-2x footer-icons"></i></a>
+            <a href="https://github.com/Panopticon772" target="_blank"><i class="fab fa-github-square fa-2x footer-icons"></i></a>
+            <a href="https://codepen.io/Panopticon772/" target="_blank"><i class="fab fa-codepen fa-2x footer-icons"></i></a>
+        </div>
+
+        <script src="tips.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    </body>
+</html>
+    
